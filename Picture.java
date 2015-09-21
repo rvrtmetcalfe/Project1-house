@@ -6,7 +6,7 @@
  *
  * This class was written as an early example for teaching Java with BlueJ.
  * 
- * @author  Michael Kšlling and David J. Barnes
+ * @author  Michael Klling and David J. Barnes
  * @version 2011.07.31
  */
 public class Picture
@@ -107,7 +107,7 @@ public class Picture
         tri.setxPosition(250);
         tri.setyPosition(300);
         tri.changeSize(216, 250);
-        tri.changeColor("yellow");
+        tri.changeColor("green");
         tri.makeVisible();
         tri.slowMoveVertical(-290);
 
@@ -123,12 +123,12 @@ public class Picture
 
         int width=2000;
         int height =(int)(width*0.2);
-        for(int i=1;i<=40;i++) {
+        for(int i=1;i<=55;i++) {
 
             if(i==1)
             {
                 tri = new Triangle();
-                tri.changeColor("green");
+                tri.changeColor("yellow");
                 tri.setxPosition(250);
                 tri.setyPosition(300);
                 tri.changeSize(height, width);
@@ -148,7 +148,7 @@ public class Picture
             }
             else{
                 tri = new Triangle();
-                tri.changeColor("green");
+                tri.changeColor("yellow");
                 tri.setxPosition(250);
                 tri.setyPosition(300);
                 tri.changeSize(height, width);
