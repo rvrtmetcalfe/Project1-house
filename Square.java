@@ -20,9 +20,9 @@ public class Square
      */
     public Square()
     {
-        size = 60;
-        xPosition = 310;
-        yPosition = 120;
+        size = 289;
+        xPosition = 105;
+        yPosition = 5;
         color = "red";
         isVisible = false;
     }
@@ -35,7 +35,18 @@ public class Square
         isVisible = true;
         draw();
     }
-    
+    public void setxPosition(int distance)
+    {
+        erase();
+        xPosition = distance;
+        draw();
+    }
+    public void setyPosition(int distance)
+    {
+        erase();
+        yPosition = distance;
+        draw();
+    }
     /**
      * Make this square invisible. If it was already invisible, do nothing.
      */
@@ -106,12 +117,12 @@ public class Square
 
         if(distance < 0) 
         {
-            delta = -1;
+            delta = -1/4;
             distance = -distance;
         }
         else 
         {
-            delta = 1;
+            delta = 1/4;
         }
 
         for(int i = 0; i < distance; i++)
